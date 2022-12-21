@@ -11,8 +11,8 @@ from playsound import playsound
 screen=Tk()
 screen.title("MP3 player(powerderd_by 'py*')")
 screen.geometry('700x500+00+00')
-icon_pic=PhotoImage(file='download.png')
-screen.iconphoto(False,icon_pic)
+#icon_pic=PhotoImage(file='download.png')
+#screen.iconphoto(False,icon_pic)
 screen.config(bg='black')
 screen.resizable(False,False)
 
