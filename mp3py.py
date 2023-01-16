@@ -9,13 +9,13 @@ from playsound import playsound
 screen=Tk()
 screen.title("MP3 player(powerderd_by 'py*')")
 screen.geometry('700x500+00+00')
-icon_pic=PhotoImage(file='images.png')
+icon_pic=PhotoImage(file='C:\\Users\\neha\\Links\\project3Mp3\\images.png')
 screen.iconphoto(False,icon_pic)
 screen.config(bg='black')
 screen.resizable(False,False)
 
 
-logoimp=PhotoImage(file = 'vvp.png')
+logoimp=PhotoImage(file = 'C:\\Users\\neha\\Links\\project3Mp3\\vvp.png')
 Label(screen,image=logoimp, bg = "black",height=400,width=520).place(x=90,y=50)
 
 
@@ -33,14 +33,8 @@ f4.pack(side=BOTTOM)
 l1=Label(f1,text='MP3 PLAYER',fg='black',bg='red',font='"Segoe Script" 30 bold')
 l1.place(x=210,y=10)
 
-logoimp1=PhotoImage(file = 'ddnt.png')
+logoimp1=PhotoImage(file = 'C:\\Users\\neha\\Links\\project3Mp3\\ddnt.png')
 Label(f1,image=logoimp1, bg = "black",height=60,width=60).place(x=10,y=11)
-
-
-#frameimg=PhotoImage(file='doggydon.png')
-#l7=Label(f1,image=frameimg,bg='red').place(x=20,y=20)
-
-
 
 def devine():
     musvar=musisc.get() # ***most imp to learn that if you want any thing to work from entry label or list or combobox or from anyway first to get() it on particular variable or object the use it
@@ -52,7 +46,7 @@ def devine():
         elif 'keasria' in musvar:
             playsound("C:\\Users\\neha\\Links\\project3Mp3\\mysngs\\kesaria.mp3")
         elif 'rockstar' in musvar:
-            playsound("C:\\Users\\neha\\Links\\project3Mp3\\ysngs\\rocks.mp3")
+            playsound("C:\\Users\\neha\\Links\\project3Mp3\\mysngs\\rocks.mp3")
         elif 'let me u' in musvar:
             #logoimp1=logoimp
             #logoimp1=PhotoImage(file = 'play.png')
@@ -74,7 +68,7 @@ def devine():
      
        #time.sleep(7)
     except Exception as Er:
-        lbere2=Label(screen,text='bad request :( ',bg='yellow',width=61,height=3,fg='red',font='arial 10 bold')
+        lbere2=Label(screen,text='bad request :( ',bg='yellow',width=62,height=3,fg='red',font='arial 10 bold')
         lbere2.place(x=100,y=100)
 
    
@@ -113,4 +107,4 @@ btn2.place(x=540,y=380)
 btn3=Button(text='Quit',command=destr,bg='red',bd=2)
 btn3.place(x=400,y=260)
 
-#lis_ms=op_sytm.open('C:/New folder (5).07 O Rangrez')
+screen.mainloop()#most imp
